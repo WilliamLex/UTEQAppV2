@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
+import { StyleSheet, Text, View } from 'react-native';
+import { LoginInic } from './Layouts/Login';//LOGIN 
+import { Prefer } from './Layouts/Preferencias';//PREFERENCIAS
+import AppNavigator from './Layouts/NavBarDown';//BARRA DE NAVEGACION INFERIOR
+import { Contenido } from './Layouts/Contenido';//CREACION DE CONTENIDO
+import ProfileScreen from './Layouts/Perfil';
+import NavigationBar from './Layouts/NavBarUp';
+import Home from './Layouts/Home';
+import AppGestion from './Layouts/GestionContenido';
+import ContentCard from './Layouts/VisualizadorContenidos';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <LoginInic/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
